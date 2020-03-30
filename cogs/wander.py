@@ -57,8 +57,8 @@ class Wander(commands.Cog):
 
     channelPoss = []
 
-    minsteps = 5
-    stepvariance = 3
+    minsteps = 40
+    stepvariance = 20
     steps = 0
 
     def __init__(self, bot):
