@@ -87,4 +87,4 @@ class Wander(commands.Cog):
             await target.send(self.getSaying())
 
 def setup(bot):
-    bot.add_cog(PinManager(bot))
+    bot.add_cog(Wander(bot))
