@@ -66,10 +66,10 @@ class Wander(commands.Cog):
         self.steps = self.stepCounter()
         print('Initilized with '+self.steps+' steps')
 
-    def stepCounter():
+    def stepCounter(self = None):
         return random.randrange(minsteps, minsteps + stepvariance)
 
-    def getSaying():
+    def getSaying(self = None):
         return random.choices(sayings, sayweight, k = 1)
         
     @commands.Cog.listener()
