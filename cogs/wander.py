@@ -70,7 +70,7 @@ class Wander(commands.Cog):
         return random.randrange(self.minsteps, self.minsteps + self.stepvariance)
 
     def getSaying(self):
-        return random.choices(self.sayings, self.sayweight, k = 1)
+        return random.choices(self.sayings, self.sayweight, k = 1)[0]
         
     @commands.Cog.listener()
     async def on_message(self, message):
@@ -79,12 +79,12 @@ class Wander(commands.Cog):
         if message.channel not in self.channelPoss:
             self.channelPoss.append(message.channel)
         self.steps -= 1
-        print(str(self.steps))
         if self.steps < 1:
             self.steps = self.stepCounter()
             target = random.choice(self.channelPoss)
             self.channelPoss = []
             await target.send(self.getSaying())
+            print('Walking '+str(self.steps)+' steps')
 
 def setup(bot):
     bot.add_cog(Wander(bot))
