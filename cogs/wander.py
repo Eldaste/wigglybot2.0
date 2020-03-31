@@ -40,7 +40,7 @@ class Wander(commands.Cog):
         10,
         13,
         2,
-        16,
+        11,
         14,
         3,
         3,
