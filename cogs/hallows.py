@@ -129,10 +129,14 @@ class Hallows(commands.Cog):
         if message.author.bot:
             return
 
+        message = ''
+
         if random.random() > 0.5:
             message = random.choice(trick)
+            print('Trick') 
         else:
             message = random.choice(treat)
+            print('Treat')
 
         await ctx.send(message)
 
