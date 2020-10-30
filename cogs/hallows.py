@@ -126,7 +126,7 @@ class Hallows(commands.Cog):
         
     @commands.command()
     async def tot(self, ctx):
-        if message.author.bot:
+        if ctx.message.author.bot:
             return
 
         message = ''
