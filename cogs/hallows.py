@@ -132,10 +132,10 @@ class Hallows(commands.Cog):
         message = ''
 
         if random.random() > 0.5:
-            message = random.choice(trick)
+            message = random.choice(self.trick)
             print('Trick') 
         else:
-            message = random.choice(treat)
+            message = random.choice(self.treat)
             print('Treat')
 
         await ctx.send(message)
