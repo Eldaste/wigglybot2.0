@@ -55,7 +55,6 @@ class Hallows(commands.Cog):
         'https://i.imgur.com/T3Leabb.jpeg',
         'https://cdn.discordapp.com/attachments/765839161830932481/771574671921119242/rowletbbq.png',
         'https://preview.redd.it/i2ec1oluhdn41.png?width=801&auto=webp&s=3596ebdecae42ecd8de3e93f61c7484a1162a016',
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Pipa_pipa_whole_body.jpg/500px-Pipa_pipa_whole_body.jpg',
         'Did you know? \n25% of your bones are in your feet.',
         'Did you know? \nCherries can still be sold if 4% of them are found to contain maggots.',
         'Did you know? \nThe average number of skeletons that people have is greater than one.',
@@ -118,7 +117,8 @@ class Hallows(commands.Cog):
         'Did you know? \nWhile bats are very adept fliers, they do end up running into each other. A lot.',
         "Did you know? \nCanada geese adopt orphan geese from different species into their flocks.",
         'Did you know? \nVampire bats share food.',
-        
+        'https://cdn.discordapp.com/attachments/765839161830932481/771951969408647188/image0.jpg',
+        'https://cdn.discordapp.com/attachments/765839161830932481/771951970004762684/image1.jpg',
     ]
 
     def __init__(self, bot):
